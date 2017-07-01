@@ -168,7 +168,8 @@ body {
         margin-right: 10px;
         transform: scale(1) !important;
       }
-      &-name { 
+      &-name {
+        width: auto !important;
         position: static !important; 
         transform: none !important;
       }
@@ -183,22 +184,27 @@ body {
       height: $game-logo-height;
     }
     &-name {
+      top: 0;
+      left: 0;
+      width: 100%;
       transition: .2s;
+      text-align: center;
       position: absolute;
-      transform: translateY(40px);
+      transform: scale(0) translateY(100px);
     }
     &:hover {
       .game-logo { transform: scale(.4); }
-      .game-name { transform: scale(1.1) translateY(0); }
+      .game-name { transform: scale(1.1) translateY(20px); }
     }
     &-link {
       width: 100%;
-      height: 100%;
       display: flex;
       transition: .2s;
       white-space: nowrap;
       align-items: center;
+      position: relative;
       justify-content: center;
+      height: $header-height;
       color: $game-item-color;
       font-size: $game-item-font-size;
       &:hover {
