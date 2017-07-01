@@ -1,0 +1,21 @@
+@mixin on($device) {
+  @if $device == pad {
+    @media (max-width: 768px) {
+      @content;
+    }
+  } @else if $device == phone {
+    @media (max-width: 480px) {
+      @content;
+    }
+  }
+}
+
+@mixin stretch() {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
