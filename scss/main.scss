@@ -158,7 +158,7 @@ body {
       opacity: 0;
       padding: 0 8%;
       height: $game-item-height !important;
-      transform: scale(1.1) translateX(-28px);
+      transform: scale(1.1) translateY(-24px);
       transition: opacity .3s ease-out, transform .3s ease-out;
       #navbar-state:checked ~ .header & {
         opacity: 1;
