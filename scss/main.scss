@@ -22,6 +22,7 @@ html, body {
 
 body {
   min-width: 320px;
+  overflow-x: hidden; // Fix horizontal scroll bar in IE. Why?
   font-family: $font-family;
   background: url("../images/sc2void.jpg") no-repeat;
   background-size: 100%;
@@ -110,7 +111,6 @@ body {
 }
 
 #navbar-state {
-  opacity: 0;
   display: none;
 }
 

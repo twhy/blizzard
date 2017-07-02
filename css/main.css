@@ -16,6 +16,7 @@ html, body {
 
 body {
   min-width: 320px;
+  overflow-x: hidden;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   background: url("../images/sc2void.jpg") no-repeat;
   background-size: 100%; }
@@ -97,7 +98,6 @@ body {
       height: 60px; } }
 
 #navbar-state {
-  opacity: 0;
   display: none; }
 
 .header {
