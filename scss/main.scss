@@ -10,7 +10,7 @@ $game-item-background: #000;
 $game-item-hover-color: #fff;
 $game-item-font-size: 14px;
 $header-height: 60px;
-$header-background: rgba(0, 0, 0, .9);
+$header-background: linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, .8));
 $container-max-width: 1100px;
 
 @import "reset";
@@ -132,7 +132,7 @@ body {
     height: $header-height;
     #navbar-state:checked ~ & {
       height: 100%;
-      background: #000;
+      background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, .8));
       transition: background .35s linear, height .35s ease-in 200ms;
     }
     .container {

@@ -104,7 +104,7 @@ body {
   z-index: 99;
   overflow: hidden;
   height: 60px;
-  background: rgba(0, 0, 0, 0.9); }
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)); }
   .header .container {
     display: flex;
     margin: auto;
@@ -124,7 +124,7 @@ body {
       height: 60px; }
       #navbar-state:checked ~ .header {
         height: 100%;
-        background: #000;
+        background: linear-gradient(black, rgba(0, 0, 0, 0.8));
         transition: background .35s linear, height .35s ease-in 200ms; }
       .header .container {
         display: block; } }
